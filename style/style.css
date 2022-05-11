@@ -1,0 +1,515 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(250,216,214);
+    background: linear-gradient(180deg, rgba(250,216,214,1) 16%, rgba(255,255,255,1) 100%);}
+
+/* ESTILO HEADER */
+
+.header-container {
+    background-color: #F2F4F3;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding-left: 20px;
+}
+
+.nav__ul {
+    display: flex;
+    text-align: end;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 20px;
+}
+
+.nav__li{
+    display: inline-block;
+    color: #8E6C88;
+    padding: 10px;
+    font-weight: 400;
+    font-family: 'Satisfy', cursive;
+    font-size: 20px;
+}
+
+.nav__li a {
+    text-decoration: none;
+    text-align: right;
+    padding: 0 20px;
+} 
+
+.logo {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+    padding-bottom: 20px;
+} 
+
+.nav__li a:hover {
+    border-bottom: solid 2px #8E6C88;
+}
+
+/* ESTILO BACKGROUND IMG */
+
+.background__figure {
+    margin: 0;
+}
+
+.background__img {
+    width: 100%;
+    margin: 0;
+    object-fit: cover;
+}
+
+/* ESTILO SECTION INFO*/
+
+.section-info {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.protocol {
+    text-align: center;
+    font-family: 'Zilla Slab', serif;
+    font-weight: 400;
+    color: #8E6C88;
+    padding: 20px 10px;
+    border-radius: 7px;
+    border: 1px solid #111;
+    margin: 20px;
+}
+
+.protocol h3 {
+    font-family: 'Zilla Slab', serif;
+    font-weight: 400;
+    color: #8E6C88;
+}
+
+.quote {
+    width: 100vw;
+    text-align: center;
+    padding: 10px 200px 0 200px;
+    font-family: 'Zilla Slab', serif;
+    font-weight: 400;
+    color: #8E6C88;
+    font-size: 23px;
+}
+
+.quote h4 {
+    font-family: 'Zilla Slab', serif;
+    font-weight: 400;
+    color: #8E6C88;
+    font-size: 2rem;
+    text-align: end;
+}
+
+/* ESTILO GALLERY */
+
+.gallery {
+	display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 500px);
+}
+
+.gallery__figure {
+    margin: 0;
+    position: relative;
+    object-fit: cover;
+}
+
+.gallery__image {
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.gallery__figcaption {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    opacity: 0;
+    font-family: 'Zilla Slab', serif;
+    font-weight: 400;
+    color: #fff;
+    font-size: 1.5rem;
+    text-shadow: 0 0 3px #000, 0 0 5px #000;
+}
+
+.gallery__figure:hover {
+    filter: grayscale(2);
+}
+
+.gallery__figure:hover figcaption {
+    opacity: 1;
+}
+
+.gallery__figure:first-child {
+    grid-column: 1/5;
+    grid-row: 1;
+}
+
+.gallery__figure:nth-child(2) {
+    grid-column: 1/2;
+    grid-row: 2;
+}
+
+.gallery__figure:nth-child(3) {
+    grid-column: 2/3;
+    grid-row: 2;
+}
+
+.gallery__figure:nth-child(7) {
+    grid-column: 3/4;
+    grid-row: 2;
+}
+
+.gallery__figure:nth-child(8) {
+    grid-column: 4/5;
+    grid-row: 2;
+}
+
+.gallery__figure:nth-child(4) {
+    grid-column: 3/5;
+    grid-row: 3;
+}
+
+.gallery__figure:nth-child(6) {
+    grid-column: 1/3;
+    grid-row: 3;
+}
+
+.gallery__figure:nth-child(5) {
+    grid-column: 1/5;
+    grid-row: 4;
+}
+
+/* ESTILO PRINTS */
+
+.print-list {
+    margin: 3rem 0;
+    display: flex;
+    flex-flow: row wrap;
+    box-sizing: border-box;
+    justify-content: space-evenly;
+    position: relative;
+    gap: 3rem;
+}
+
+.print__figure {
+    margin: 0;
+}
+
+.print__img {
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.print__article {
+    position: relative;
+    height: 600px;
+    width: 500px;
+    border: 2px solid #8E6C88;
+    padding: 20px;
+    border-radius: 2%;
+    opacity: 1;
+}
+
+article:hover img {
+    opacity: .4;
+}
+
+section h3 {
+    font-family: 'Zilla Slab', serif;
+    font-weight: 400;
+    color: #8E6C88;
+}
+
+.price {
+    position: absolute;
+    top: 40% ;
+    left: 40%;
+    padding: 1rem 1.5rem;
+    border: 3px solid #8E6C88;
+    background-color: #8E6C88;
+    border-radius: 50%;
+    font-family: 'Zilla Slab', serif;
+    font-weight: 800;
+    color: #F2F4F3;
+    font-size: 30px;
+    opacity: 0;
+    cursor: pointer;
+    transition: all 1.2s ease;
+}
+
+article:hover .price {
+    opacity: 1;
+    transform: rotate(360deg) scale(1.5);
+}
+
+/* ESTILO BLOG */
+
+/* ESTILO ART 1 */
+
+.blog-container-1 {
+    height: 100%;
+    margin: 15px;
+    padding: 15px;
+    border: 1px solid #8E6C88;
+    font-family: 'Zilla Slab', serif;
+    color: #8E6C88;
+}
+
+.blog__article-1 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(160px);
+}
+
+.header-1 {
+    grid-column: 1 / span 3;   
+    grid-row: 1 / 2;
+}
+
+.header-1 h1 {
+    text-align: center;
+    font-size: 3.5rem;
+    font-family: 'Zilla Slab', serif;
+    color: #8E6C88;
+}
+
+.header-1 p {
+    font-size: 1.2rem;
+    border-bottom: 1px solid #8E6C88;
+    text-align: center;
+}
+
+.main-1 {
+    grid-column: 1 / span 3;
+    grid-row: 2 / 3;
+}
+
+.main-1 h4 {
+    font-size: 2rem;
+    font-family: 'Zilla Slab', serif;
+    color: #8E6C88;
+    text-decoration: underline;
+}
+
+.main-1 p {
+    margin: 30px 0;
+    font-size: 1.2rem;
+    text-align: justify;
+}
+.main-1 p:first-child {
+    font-style: italic;
+    padding-bottom: 30px;
+    text-align: center;
+    margin-top: 45px;
+}
+
+.main-1 .main__img {
+    width: 70%;
+    object-fit: cover;
+}
+
+.aside-1 {
+    text-align: center;
+    margin: 30px;
+    grid-column: 4 / 5;
+    grid-row: 1 / span 3;
+}
+
+.aside-1  h4 {
+    margin: 15px;
+    text-align: justify;
+}
+
+.aside-1  p {
+    margin: 15px;
+    text-align: justify;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #8E6C88;
+}
+
+.aside-1 a {
+    text-decoration: none;
+}
+
+.aside-1 a:hover {
+    color: #000;
+}
+
+.aside__img {
+    height: 200px;
+    width: 70%;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.footer-1 {
+    grid-column: 1 / span 3;
+    grid-row: 3 / span 1;
+    display: flex;
+    flex-flow: row wrap;
+    border-top: 1px solid #8E6C88;
+    justify-content: flex-start;
+    padding: 1rem;
+}
+
+.footer__li {
+    display: inline-block;
+    margin-right: 1rem;
+    font-size: large;
+}
+
+.footer__li a:hover {
+    color: #000;
+}
+
+
+/* ESTILO ABOUT */
+
+.about_contact-container {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 500px);
+}
+
+.bio-container {
+    grid-column: 1;
+    margin-top: 20px;
+    width: 100%;
+    padding: 20px;
+}
+
+.bio__section {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.bio__section--h1 {
+    font-family: 'Zilla Slab', serif;
+    font-weight: 400;
+    color: #8E6C88;
+}
+.bio__section--p {
+    font-family: 'Zilla Slab', serif;
+    font-weight: 400;
+    color: #8E6C88;
+    font-size: 22px;
+}
+
+figure.bio__img {
+    width: 300px;
+}
+
+.bio__img  {
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 3%;
+}
+
+/* ESTILO FORM */
+
+.form {
+    grid-column: 2;
+    width: 500px;
+    margin-top: 20px;
+    height: 100vh;
+    padding: 20px;
+}
+
+.h2 h2 {
+    font-family: 'Satisfy', cursive;
+    font-weight: 400;
+    color: #8E6C88;
+    font-size: 40px;
+}
+
+textarea {
+    height: 200px;
+    width: 100%;
+    resize: none;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #8E6C88;
+    background-color: transparent;
+    color: #8E6C88;
+    margin-bottom: 30px;
+}
+
+input {
+    width: 150px;
+    resize: none;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #8E6C88;
+    background-color: transparent;
+    color: #8E6C88;
+    padding-bottom: 14px;
+    margin-bottom: 30px;
+}
+
+button.button {
+    cursor: pointer;
+    border: 2px solid #8E6C88;
+    background-color: transparent;
+    color: #8E6C88;
+    margin: 30px;
+    font-family: 'Satisfy', cursive;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+input::placeholder {
+    text-align: center;
+}
+
+::placeholder {
+    font-family: 'Satisfy', cursive;
+    font-weight: 400;
+    color: #8E6C88;
+    font-size: 20px;
+}
+
+/* ESTILO FOOTER */
+
+.footer {
+    height: 100px;
+    padding-top: 20px;
+    border-top: 1px solid #8E6C88;
+    background-color: #F2F4F3;
+}
+
+.copyright {
+    padding-top: 10px;
+    text-align: center;
+    color: #8E6C88;
+    font-weight: 400;
+    font-family: 'Satisfy', cursive;
+    font-size: large;
+    padding-left: 40px;
+}
+
+.footer__ul {
+    text-align: center;
+    color: #8E6C88;
+    font-weight: 800;
+    margin-top: 0;
+}
+
+.footer__li {
+    list-style-type: none;
+    text-align: center;
+}
