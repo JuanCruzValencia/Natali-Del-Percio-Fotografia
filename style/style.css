@@ -54,6 +54,14 @@ body {
     border-bottom: solid 2px #8E6C88;
 }
 
+/* GRID RESPONSIVE MAIN */
+
+.main__index {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1000px 300px 500px;
+}
+
 /* ESTILO BACKGROUND IMG */
 
 .background__figure {
@@ -91,9 +99,8 @@ body {
 }
 
 .quote {
-    width: 100vw;
+    width: 100%;
     text-align: center;
-    padding: 10px 200px 0 200px;
     font-family: 'Zilla Slab', serif;
     font-weight: 400;
     color: #8E6C88;
@@ -486,6 +493,10 @@ input::placeholder {
 /* ESTILO FOOTER */
 
 .footer {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
     height: 100px;
     padding-top: 20px;
     border-top: 1px solid #8E6C88;
@@ -493,20 +504,15 @@ input::placeholder {
 }
 
 .copyright {
-    padding-top: 10px;
-    text-align: center;
     color: #8E6C88;
     font-weight: 400;
     font-family: 'Satisfy', cursive;
     font-size: large;
-    padding-left: 40px;
 }
 
 .footer__ul {
-    text-align: center;
     color: #8E6C88;
     font-weight: 800;
-    margin-top: 0;
 }
 
 .footer__li {
