@@ -381,7 +381,6 @@ article:hover .price {
     color: #000;
 }
 
-
 /* ESTILO ABOUT */
 
 .about_contact-container {
@@ -437,14 +436,14 @@ figure.bio__img {
     padding: 20px;
 }
 
-.h2 h2 {
+.form__h2 {
     font-family: 'Satisfy', cursive;
     font-weight: 400;
     color: #8E6C88;
     font-size: 40px;
 }
 
-textarea {
+.form__textarea {
     height: 200px;
     width: 100%;
     resize: none;
@@ -456,7 +455,7 @@ textarea {
     margin-bottom: 30px;
 }
 
-input {
+.form__input {
     width: 150px;
     resize: none;
     outline: none;
@@ -468,7 +467,7 @@ input {
     margin-bottom: 30px;
 }
 
-button.button {
+.form__button {
     cursor: pointer;
     border: 2px solid #8E6C88;
     background-color: transparent;
@@ -479,8 +478,8 @@ button.button {
     font-size: 20px;
 }
 
-input::placeholder {
-    text-align: center;
+.form__textarea::placeholder {
+    text-align: left;
 }
 
 ::placeholder {
@@ -488,6 +487,7 @@ input::placeholder {
     font-weight: 400;
     color: #8E6C88;
     font-size: 20px;
+    text-align: center;
 }
 
 /* ESTILO FOOTER */
