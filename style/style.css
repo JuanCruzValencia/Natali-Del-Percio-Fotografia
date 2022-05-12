@@ -5,8 +5,8 @@
 }
 
 body {
-    background: rgb(250,216,214);
-    background: linear-gradient(180deg, rgba(250,216,214,1) 16%, rgba(255,255,255,1) 100%);}
+    background: linear-gradient(180deg, rgba(250,216,214,1) 16%, rgba(255,255,255,1) 100%);
+}
 
 /* ESTILO HEADER */
 
@@ -15,7 +15,7 @@ body {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    padding-left: 20px;
+    padding-left: 1.3rem;
 }
 
 .nav__ul {
@@ -24,22 +24,22 @@ body {
     height: 100%;
     align-items: center;
     justify-content: flex-end;
-    padding-right: 20px;
+    padding-right: 1.3rem;
 }
 
 .nav__li{
     display: inline-block;
     color: #8E6C88;
-    padding: 10px;
+    padding: .6rem;
     font-weight: 400;
     font-family: 'Satisfy', cursive;
-    font-size: 20px;
+    font-size: 1.3em;
 }
 
 .nav__li a {
     text-decoration: none;
     text-align: right;
-    padding: 0 20px;
+    padding: 0 1.3rem;
 } 
 
 .logo {
@@ -47,11 +47,11 @@ body {
     justify-content: center;
     height: 100%;
     align-items: center;
-    padding-bottom: 20px;
+    padding-bottom: 1.3rem;
 } 
 
 .nav__li a:hover {
-    border-bottom: solid 2px #8E6C88;
+    border-bottom: 2px solid #8E6C88;
 }
 
 /* GRID RESPONSIVE MAIN */
@@ -86,10 +86,10 @@ body {
     font-family: 'Zilla Slab', serif;
     font-weight: 400;
     color: #8E6C88;
-    padding: 20px 10px;
+    padding: 1.3rem .6rem;
     border-radius: 7px;
     border: 1px solid #111;
-    margin: 20px;
+    margin: 1.3rem;
 }
 
 .protocol h3 {
@@ -104,7 +104,7 @@ body {
     font-family: 'Zilla Slab', serif;
     font-weight: 400;
     color: #8E6C88;
-    font-size: 23px;
+    font-size: 1.4em;
 }
 
 .quote h4 {
@@ -139,7 +139,7 @@ body {
     position: absolute;
     bottom: 0;
     width: 100%;
-    padding: 10px;
+    padding: .6rem;
     opacity: 0;
     font-family: 'Zilla Slab', serif;
     font-weight: 400;
@@ -223,7 +223,7 @@ body {
     height: 600px;
     width: 500px;
     border: 2px solid #8E6C88;
-    padding: 20px;
+    padding: 1.3rem;
     border-radius: 2%;
     opacity: 1;
 }
@@ -249,7 +249,7 @@ section h3 {
     font-family: 'Zilla Slab', serif;
     font-weight: 800;
     color: #F2F4F3;
-    font-size: 30px;
+    font-size: 1.9em;
     opacity: 0;
     cursor: pointer;
     transition: all 1.2s ease;
@@ -266,8 +266,8 @@ article:hover .price {
 
 .blog-container-1 {
     height: 100%;
-    margin: 15px;
-    padding: 15px;
+    margin: 1rem;
+    padding: 1rem;
     border: 1px solid #8E6C88;
     font-family: 'Zilla Slab', serif;
     color: #8E6C88;
@@ -310,15 +310,15 @@ article:hover .price {
 }
 
 .main-1 p {
-    margin: 30px 0;
-    font-size: 1.2rem;
+    margin: 1.9rem 0;
+    font-size: 1.2em;
     text-align: justify;
 }
 .main-1 p:first-child {
     font-style: italic;
-    padding-bottom: 30px;
+    padding-bottom: 1.9rem;
     text-align: center;
-    margin-top: 45px;
+    margin-top: 2.8rem;
 }
 
 .main-1 .main__img {
@@ -328,20 +328,20 @@ article:hover .price {
 
 .aside-1 {
     text-align: center;
-    margin: 30px;
+    margin: 1.9rem;
     grid-column: 4 / 5;
     grid-row: 1 / span 3;
 }
 
 .aside-1  h4 {
-    margin: 15px;
+    margin: 1rem;
     text-align: justify;
 }
 
 .aside-1  p {
-    margin: 15px;
+    margin: 1rem;
     text-align: justify;
-    padding-bottom: 15px;
+    padding-bottom: 1rem;
     border-bottom: 1px solid #8E6C88;
 }
 
@@ -393,9 +393,9 @@ article:hover .price {
 
 .bio-container {
     grid-column: 1;
-    margin-top: 20px;
+    margin-top: 1.3rem;
     width: 100%;
-    padding: 20px;
+    padding: 1.3rem;
 }
 
 .bio__section {
@@ -412,7 +412,7 @@ article:hover .price {
     font-family: 'Zilla Slab', serif;
     font-weight: 400;
     color: #8E6C88;
-    font-size: 22px;
+    font-size: 1.4em;
 }
 
 figure.bio__img {
@@ -431,16 +431,16 @@ figure.bio__img {
 .form {
     grid-column: 2;
     width: 500px;
-    margin-top: 20px;
+    margin-top: 1.3rem;
     height: 100vh;
-    padding: 20px;
+    padding: 1.3rem;
 }
 
 .form__h2 {
     font-family: 'Satisfy', cursive;
     font-weight: 400;
     color: #8E6C88;
-    font-size: 40px;
+    font-size: 2.5em;
 }
 
 .form__textarea {
@@ -452,7 +452,7 @@ figure.bio__img {
     border-bottom: 2px solid #8E6C88;
     background-color: transparent;
     color: #8E6C88;
-    margin-bottom: 30px;
+    margin-bottom: 1.9rem;
 }
 
 .form__input {
@@ -463,8 +463,8 @@ figure.bio__img {
     border-bottom: 2px solid #8E6C88;
     background-color: transparent;
     color: #8E6C88;
-    padding-bottom: 14px;
-    margin-bottom: 30px;
+    padding-bottom: 1rem;
+    margin-bottom: 1.9rem;
 }
 
 .form__button {
@@ -472,10 +472,10 @@ figure.bio__img {
     border: 2px solid #8E6C88;
     background-color: transparent;
     color: #8E6C88;
-    margin: 30px;
+    margin: 1.9rem;
     font-family: 'Satisfy', cursive;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 1.3em;
 }
 
 .form__textarea::placeholder {
@@ -498,7 +498,7 @@ figure.bio__img {
     justify-content: center;
     align-items: center;
     height: 100px;
-    padding-top: 20px;
+    padding-top: 1.3rem;
     border-top: 1px solid #8E6C88;
     background-color: #F2F4F3;
 }
