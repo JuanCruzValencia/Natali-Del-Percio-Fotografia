@@ -199,13 +199,14 @@ body {
 /* ESTILO PRINTS */
 
 .print-list {
-    margin: 3rem 0;
-    display: flex;
-    flex-flow: row wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     box-sizing: border-box;
-    justify-content: space-evenly;
     position: relative;
+    justify-content: space-around;
     gap: 3rem;
+    margin: 3rem 0;
 }
 
 .print__figure {
@@ -219,6 +220,8 @@ body {
 }
 
 .print__article {
+    align-self: center;
+    justify-self: center;
     position: relative;
     height: 600px;
     width: 500px;
