@@ -263,9 +263,7 @@ article:hover .price {
     transform: rotate(360deg) scale(1.5);
 }
 
-/* ESTILO BLOG */
-
-/* ESTILO ART 1 */
+/* ESTILO BLOG ART 1 */
 
 .blog-container-1 {
     height: 100%;
@@ -390,20 +388,26 @@ article:hover .price {
     display: grid;
     height: 100%;
     width: 100%;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 500px);
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(1fr);
 }
 
 .bio-container {
-    grid-column: 1;
-    margin-top: 1.3rem;
+    grid-row: 1;
     width: 100%;
+    margin-top: 1.3rem;
     padding: 1.3rem;
 }
 
 .bio__section {
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: row nowrap;
+    justify-content: ;
+    border-top: 1px solid #8E6C88;
+}
+
+.bio__section-text {
+    
 }
 
 .bio__section--h1 {
@@ -418,12 +422,8 @@ article:hover .price {
     font-size: 1.4em;
 }
 
-figure.bio__img {
-    width: 300px;
-}
-
 .bio__img  {
-    height: 400px;
+    height: 300px;
     width: 100%;
     object-fit: cover;
     border-radius: 3%;
@@ -432,7 +432,7 @@ figure.bio__img {
 /* ESTILO FORM */
 
 .form {
-    grid-column: 2;
+    grid-row: 2;
     width: 500px;
     margin-top: 1.3rem;
     height: 100vh;
