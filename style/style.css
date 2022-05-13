@@ -400,30 +400,41 @@ article:hover .price {
 }
 
 .bio__section {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: ;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    justify-content: center;
+    padding-top: 1.5rem;
     border-top: 1px solid #8E6C88;
 }
 
 .bio__section-text {
-    
+    grid-column: 2;
+    align-self: center;
+    padding: 1rem
+
 }
 
 .bio__section--h1 {
     font-family: 'Zilla Slab', serif;
     font-weight: 400;
     color: #8E6C88;
+    font-size: 3em;
 }
+
+.bio__figure {
+    grid-column: 1;
+}
+
 .bio__section--p {
+    text-align: justify;
     font-family: 'Zilla Slab', serif;
     font-weight: 400;
     color: #8E6C88;
-    font-size: 1.4em;
+    font-size: 1.7em;
 }
 
 .bio__img  {
-    height: 300px;
     width: 100%;
     object-fit: cover;
     border-radius: 3%;
@@ -433,10 +444,17 @@ article:hover .price {
 
 .form {
     grid-row: 2;
-    width: 500px;
-    margin-top: 1.3rem;
-    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 40px 200px 30px 30px;
+    gap: 3rem;
+    width: 100%;
     padding: 1.3rem;
+}
+
+.form__h2-container {
+    grid-column: 1/4;
+    grid-row: 1;
 }
 
 .form__h2 {
@@ -444,6 +462,11 @@ article:hover .price {
     font-weight: 400;
     color: #8E6C88;
     font-size: 2.5em;
+}
+
+.form__textarea-container {
+    grid-column: 1/4;
+    grid-row: 2;
 }
 
 .form__textarea {
@@ -455,19 +478,30 @@ article:hover .price {
     border-bottom: 2px solid #8E6C88;
     background-color: transparent;
     color: #8E6C88;
-    margin-bottom: 1.9rem;
+}
+
+.form__input-container--name {
+    grid-column: 3;
+    grid-row: 3;
+}
+.form__input-container--email {
+    grid-column: 4;
+    grid-row: 3;
 }
 
 .form__input {
-    width: 150px;
     resize: none;
     outline: none;
     border: none;
     border-bottom: 2px solid #8E6C88;
     background-color: transparent;
     color: #8E6C88;
-    padding-bottom: 1rem;
-    margin-bottom: 1.9rem;
+    padding-bottom: .5rem;
+}
+
+.form__button-container {
+    grid-column: 2;
+    grid-row: 4;
 }
 
 .form__button {
@@ -475,7 +509,6 @@ article:hover .price {
     border: 2px solid #8E6C88;
     background-color: transparent;
     color: #8E6C88;
-    margin: 1.9rem;
     font-family: 'Satisfy', cursive;
     font-weight: 400;
     font-size: 1.3em;
