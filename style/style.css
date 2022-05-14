@@ -120,7 +120,7 @@ body {
 .gallery {
 	display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 500px);
+    grid-template-rows: repeat(4, 100vh);
 }
 
 .gallery__figure {
@@ -130,7 +130,7 @@ body {
 }
 
 .gallery__image {
-    height: 500px;
+    height: 100vh;
     width: 100%;
     object-fit: cover;
 }
@@ -146,10 +146,6 @@ body {
     color: #fff;
     font-size: 1.5rem;
     text-shadow: 0 0 3px #000, 0 0 5px #000;
-}
-
-.gallery__figure:hover {
-    filter: grayscale(2);
 }
 
 .gallery__figure:hover figcaption {
@@ -205,8 +201,10 @@ body {
     box-sizing: border-box;
     position: relative;
     justify-content: space-around;
-    gap: 3rem;
-    margin: 3rem 0;
+    row-gap: 3rem;
+    padding: 1.5rem;
+    margin: 1.5rem;
+    border: 1px solid #8E6C88;
 }
 
 .print__figure {
@@ -401,29 +399,30 @@ article:hover .price {
 
 .bio__section {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr 2fr;
     grid-template-rows: auto;
     justify-content: center;
-    padding-top: 1.5rem;
+    padding: 1.5rem;
     border-top: 1px solid #8E6C88;
 }
 
 .bio__section-text {
     grid-column: 2;
     align-self: center;
-    padding: 1rem
-
+    padding: 1rem;
+    margin: 1rem;
 }
 
 .bio__section--h1 {
     font-family: 'Zilla Slab', serif;
     font-weight: 400;
     color: #8E6C88;
-    font-size: 3em;
+    font-size: 2.5em;
 }
 
 .bio__figure {
     grid-column: 1;
+    margin: auto;
 }
 
 .bio__section--p {
@@ -431,10 +430,11 @@ article:hover .price {
     font-family: 'Zilla Slab', serif;
     font-weight: 400;
     color: #8E6C88;
-    font-size: 1.7em;
+    font-size: 1.3em;
 }
 
 .bio__img  {
+    height: 700px;
     width: 100%;
     object-fit: cover;
     border-radius: 3%;
@@ -450,11 +450,14 @@ article:hover .price {
     gap: 3rem;
     width: 100%;
     padding: 1.3rem;
+    margin-left: 2rem;
 }
 
 .form__h2-container {
     grid-column: 1/4;
     grid-row: 1;
+    border-top: 1px solid #8E6C88;
+
 }
 
 .form__h2 {
