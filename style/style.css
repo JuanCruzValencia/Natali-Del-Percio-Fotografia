@@ -5,8 +5,10 @@
     --title-font: 'Satisfy', cursive;
     --text-font: 'Zilla Slab', serif;
 
-    --text-font-size: var(--medium);
+    --text-font-size: 1.3em;
+    --title-font-size: 2em;
 
+    --xsmall:1rem;
     --small: 2rem;
     --medium: 2.5rem;
     --large: 3rem;
@@ -49,16 +51,16 @@ body {
 .nav__li{
     display: inline-block;
     color: var(--text-color);
-    padding: .6rem;
+    padding: var(--xsmall);
     font-weight: 400;
     font-family: var(--title-font);
-    font-size: 1.3em;
+    font-size: var(--text-font-size);
 }
 
 .nav__li a {
     text-decoration: none;
     text-align: right;
-    padding: 0 var(--small);
+    padding: .7rem;
 } 
 
 .logo {
@@ -98,6 +100,7 @@ body {
 .section-info {
     display: flex;
     flex-flow: column wrap;
+    width: 100%;
 }
 
 .protocol {
@@ -105,32 +108,34 @@ body {
     font-family: var(--text-font);
     font-weight: 400;
     color: var(--text-color);
-    padding: var(--small) .6rem;
-    border-radius: 7px;
-    border: 1px solid #111;
+    padding: var(--small) var(--xsmall);
+    border-radius: 1rem;
+    border: 1px solid #000;
     margin: var(--small);
+    font-size: var(--text-font-size);
 }
 
 .protocol h3 {
     font-family: var(--text-font);
     font-weight: 400;
     color: var(--text-color);
+    font-size: var(--title-font-size);
 }
 
 .quote {
-    width: 100%;
     text-align: center;
     font-family: var(--text-font);
     font-weight: 400;
+    font-size: var(--text-font-size);
     color: var(--text-color);
-    font-size: 1.4em;
+    margin: var(--small);
 }
 
 .quote h4 {
     font-family: var(--text-font);
     font-weight: 400;
     color: var(--text-color);
-    font-size: var(--medium);
+    font-size: var(--title-font-size);
     text-align: end;
 }
 
@@ -158,12 +163,12 @@ body {
     position: absolute;
     bottom: 0;
     width: 100%;
-    padding: .6rem;
+    padding: var(--xsmall);
     opacity: 0;
     font-family: var(--text-font);
     font-weight: 400;
-    color: #fff;
-    font-size: 1.5rem;
+    color: var(--main-color);
+    font-size: var(--text-font-size);
     text-shadow: 0 0 3px #000, 0 0 5px #000;
 }
 
@@ -221,8 +226,8 @@ body {
     position: relative;
     justify-content: space-around;
     row-gap: var(--large);
-    padding: 1.5rem;
-    margin: 1.5rem;
+    padding: var(--small);
+    margin: var(--small);
     border: 1px solid var(--text-color);
 }
 
@@ -262,14 +267,14 @@ section h3 {
     position: absolute;
     top: 40% ;
     left: 40%;
-    padding: 1rem 1.5rem;
+    padding: var(--xsmall) var(--small);
     border: 3px solid var(--text-color);
-    background-color: var(--text-color);
+    background-color: var(--main-color);
     border-radius: 50%;
     font-family: var(--text-font);
     font-weight: 800;
-    color: #F2F4F3;
-    font-size: 1.9em;
+    color: var(--text-color);
+    font-size: var(--title-font-size);
     opacity: 0;
     cursor: pointer;
     transition: all 1.2s ease;
@@ -284,8 +289,8 @@ article:hover .price {
 
 .blog-container-1 {
     height: 100%;
-    margin: 1rem;
-    padding: 1rem;
+    margin: var(--xsmall);
+    padding: var(--xsmall);
     border: 1px solid var(--text-color);
     font-family: var(--text-font);
     color: var(--text-color);
@@ -304,13 +309,13 @@ article:hover .price {
 
 .header-1 h1 {
     text-align: center;
-    font-size: 3.5rem;
+    font-size: var(--title-font-size);
     font-family: var(--text-font);
     color: var(--text-color);
 }
 
 .header-1 p {
-    font-size: 1.2rem;
+    font-size: var(--text-font-size);
     border-bottom: 1px solid var(--text-color);
     text-align: center;
 }
@@ -328,15 +333,15 @@ article:hover .price {
 }
 
 .main-1 p {
-    margin: 1.9rem 0;
-    font-size: 1.2em;
+    margin: var(--small) 0;
+    font-size: var(--text-font-size);
     text-align: justify;
 }
 .main-1 p:first-child {
     font-style: italic;
-    padding-bottom: 1.9rem;
+    padding-bottom: var(--medium);
     text-align: center;
-    margin-top: 2.8rem;
+    margin-top: var(--large);
 }
 
 .main-1 .main__img {
@@ -346,20 +351,20 @@ article:hover .price {
 
 .aside-1 {
     text-align: center;
-    margin: 1.9rem;
+    margin: var(--medium);
     grid-column: 4 / 5;
     grid-row: 1 / span 3;
 }
 
 .aside-1  h4 {
-    margin: 1rem;
+    margin: var(--xsmall);
     text-align: justify;
 }
 
 .aside-1  p {
-    margin: 1rem;
+    margin: var(--xsmall);
     text-align: justify;
-    padding-bottom: 1rem;
+    padding-bottom: var(--xsmall);
     border-bottom: 1px solid var(--text-color);
 }
 
@@ -376,7 +381,7 @@ article:hover .price {
     width: 70%;
     object-fit: cover;
     border-radius: 50%;
-    margin-bottom: 1rem;
+    margin-bottom: var(--xsmall);
 }
 
 .footer-1 {
@@ -386,12 +391,12 @@ article:hover .price {
     flex-flow: row wrap;
     border-top: 1px solid var(--text-color);
     justify-content: flex-start;
-    padding: 1rem;
+    padding: var(--xsmall);
 }
 
 .footer__li {
     display: inline-block;
-    margin-right: 1rem;
+    margin-right: var(--xsmall);
     font-size: large;
 }
 
@@ -421,22 +426,22 @@ article:hover .price {
     grid-template-columns: 1fr 2fr;
     grid-template-rows: auto;
     justify-content: center;
-    padding: 1.5rem;
+    padding: var(--small);
     border-top: 1px solid var(--text-color);
 }
 
 .bio__section-text {
     grid-column: 2;
     align-self: center;
-    padding: 1rem;
-    margin: 1rem;
+    padding: var(--xsmall);
+    margin: var(--xsmall);
 }
 
 .bio__section--h1 {
     font-family: var(--text-font);
     font-weight: 400;
     color: var(--text-color);
-    font-size: var(--large);
+    font-size: var(--title-font-size);
 }
 
 .bio__figure {
@@ -449,7 +454,7 @@ article:hover .price {
     font-family: var(--text-font);
     font-weight: 400;
     color: var(--text-color);
-    font-size: 1.3em;
+    font-size: var(--text-font-size);
 }
 
 .bio__img  {
@@ -467,37 +472,33 @@ article:hover .price {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 40px 200px 30px 30px;
     gap: var(--large);
-    width: 100%;
     padding: var(--small);
-    margin-left: var(--medium);
 }
 
 .form__h2-container {
-    grid-column: 1/4;
+    grid-column: 1/5;
     grid-row: 1;
     border-top: 1px solid var(--text-color);
-
 }
 
 .form__h2 {
     font-family: var(--title-font);
     font-weight: 400;
     color: var(--text-color);
-    font-size: var(--large);
+    font-size: var(--title-font-size);
 }
 
 .form__textarea-container {
-    grid-column: 1/4;
+    grid-column: 1/5;
     grid-row: 2;
+    border-bottom: 2px solid var(--text-color);
 }
 
 .form__textarea {
     height: 200px;
-    width: 100%;
     resize: none;
     outline: none;
     border: none;
-    border-bottom: 2px solid var(--text-color);
     background-color: transparent;
     color: var(--text-color);
 }
@@ -518,7 +519,7 @@ article:hover .price {
     border-bottom: 2px solid var(--text-color);
     background-color: transparent;
     color: var(--text-color);
-    padding-bottom: .5rem;
+    padding: var(--xsmall);
 }
 
 .form__button-container {
@@ -533,7 +534,8 @@ article:hover .price {
     color: var(--text-color);
     font-family: var(--title-font);
     font-weight: 400;
-    font-size: 1.3em;
+    font-size: var(--title-font-size);
+    padding: 0 .7rem;
 }
 
 .form__textarea::placeholder {
@@ -544,7 +546,7 @@ article:hover .price {
     font-family: var(--title-font);
     font-weight: 400;
     color: var(--text-color);
-    font-size: 20px;
+    font-size: var(--text-font-size);
     text-align: center;
 }
 
@@ -558,14 +560,14 @@ article:hover .price {
     height: 100px;
     padding-top: var(--small);
     border-top: 1px solid var(--text-color);
-    background-color: #F2F4F3;
+    background-color: var(--main-color);
 }
 
 .copyright {
     color: var(--text-color);
     font-weight: 400;
     font-family: var(--title-font);
-    font-size: large;
+    font-size: var(--text-font-size);
 }
 
 .footer__ul {
