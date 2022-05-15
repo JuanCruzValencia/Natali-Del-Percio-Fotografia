@@ -1,7 +1,26 @@
+:root {
+    --main-color: #F2F4F3;
+    --text-color: #8E6C88;
+
+    --title-font: 'Satisfy', cursive;
+    --text-font: 'Zilla Slab', serif;
+
+    --text-font-size: var(--medium);
+
+    --small: 2rem;
+    --medium: 2.5rem;
+    --large: 3rem;
+
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
 }
 
 body {
@@ -11,11 +30,11 @@ body {
 /* ESTILO HEADER */
 
 .header-container {
-    background-color: #F2F4F3;
+    background-color: var(--main-color);
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    padding-left: 1.3rem;
+    padding-left: var(--small);
 }
 
 .nav__ul {
@@ -24,22 +43,22 @@ body {
     height: 100%;
     align-items: center;
     justify-content: flex-end;
-    padding-right: 1.3rem;
+    padding-right: var(--small);
 }
 
 .nav__li{
     display: inline-block;
-    color: #8E6C88;
+    color: var(--text-color);
     padding: .6rem;
     font-weight: 400;
-    font-family: 'Satisfy', cursive;
+    font-family: var(--title-font);
     font-size: 1.3em;
 }
 
 .nav__li a {
     text-decoration: none;
     text-align: right;
-    padding: 0 1.3rem;
+    padding: 0 var(--small);
 } 
 
 .logo {
@@ -47,11 +66,11 @@ body {
     justify-content: center;
     height: 100%;
     align-items: center;
-    padding-bottom: 1.3rem;
+    padding-bottom: var(--small);
 } 
 
 .nav__li a:hover {
-    border-bottom: 2px solid #8E6C88;
+    border-bottom: 2px solid var(--text-color);
 }
 
 /* GRID RESPONSIVE MAIN */
@@ -83,35 +102,35 @@ body {
 
 .protocol {
     text-align: center;
-    font-family: 'Zilla Slab', serif;
+    font-family: var(--text-font);
     font-weight: 400;
-    color: #8E6C88;
-    padding: 1.3rem .6rem;
+    color: var(--text-color);
+    padding: var(--small) .6rem;
     border-radius: 7px;
     border: 1px solid #111;
-    margin: 1.3rem;
+    margin: var(--small);
 }
 
 .protocol h3 {
-    font-family: 'Zilla Slab', serif;
+    font-family: var(--text-font);
     font-weight: 400;
-    color: #8E6C88;
+    color: var(--text-color);
 }
 
 .quote {
     width: 100%;
     text-align: center;
-    font-family: 'Zilla Slab', serif;
+    font-family: var(--text-font);
     font-weight: 400;
-    color: #8E6C88;
+    color: var(--text-color);
     font-size: 1.4em;
 }
 
 .quote h4 {
-    font-family: 'Zilla Slab', serif;
+    font-family: var(--text-font);
     font-weight: 400;
-    color: #8E6C88;
-    font-size: 2rem;
+    color: var(--text-color);
+    font-size: var(--medium);
     text-align: end;
 }
 
@@ -141,7 +160,7 @@ body {
     width: 100%;
     padding: .6rem;
     opacity: 0;
-    font-family: 'Zilla Slab', serif;
+    font-family: var(--text-font);
     font-weight: 400;
     color: #fff;
     font-size: 1.5rem;
@@ -201,10 +220,10 @@ body {
     box-sizing: border-box;
     position: relative;
     justify-content: space-around;
-    row-gap: 3rem;
+    row-gap: var(--large);
     padding: 1.5rem;
     margin: 1.5rem;
-    border: 1px solid #8E6C88;
+    border: 1px solid var(--text-color);
 }
 
 .print__figure {
@@ -223,8 +242,8 @@ body {
     position: relative;
     height: 600px;
     width: 500px;
-    border: 2px solid #8E6C88;
-    padding: 1.3rem;
+    border: 2px solid var(--text-color);
+    padding: var(--small);
     border-radius: 2%;
     opacity: 1;
 }
@@ -234,9 +253,9 @@ article:hover img {
 }
 
 section h3 {
-    font-family: 'Zilla Slab', serif;
+    font-family: var(--text-font);
     font-weight: 400;
-    color: #8E6C88;
+    color: var(--text-color);
 }
 
 .price {
@@ -244,10 +263,10 @@ section h3 {
     top: 40% ;
     left: 40%;
     padding: 1rem 1.5rem;
-    border: 3px solid #8E6C88;
-    background-color: #8E6C88;
+    border: 3px solid var(--text-color);
+    background-color: var(--text-color);
     border-radius: 50%;
-    font-family: 'Zilla Slab', serif;
+    font-family: var(--text-font);
     font-weight: 800;
     color: #F2F4F3;
     font-size: 1.9em;
@@ -267,9 +286,9 @@ article:hover .price {
     height: 100%;
     margin: 1rem;
     padding: 1rem;
-    border: 1px solid #8E6C88;
-    font-family: 'Zilla Slab', serif;
-    color: #8E6C88;
+    border: 1px solid var(--text-color);
+    font-family: var(--text-font);
+    color: var(--text-color);
 }
 
 .blog__article-1 {
@@ -286,13 +305,13 @@ article:hover .price {
 .header-1 h1 {
     text-align: center;
     font-size: 3.5rem;
-    font-family: 'Zilla Slab', serif;
-    color: #8E6C88;
+    font-family: var(--text-font);
+    color: var(--text-color);
 }
 
 .header-1 p {
     font-size: 1.2rem;
-    border-bottom: 1px solid #8E6C88;
+    border-bottom: 1px solid var(--text-color);
     text-align: center;
 }
 
@@ -302,9 +321,9 @@ article:hover .price {
 }
 
 .main-1 h4 {
-    font-size: 2rem;
-    font-family: 'Zilla Slab', serif;
-    color: #8E6C88;
+    font-size: var(--medium);
+    font-family: var(--text-font);
+    color: var(--text-color);
     text-decoration: underline;
 }
 
@@ -341,7 +360,7 @@ article:hover .price {
     margin: 1rem;
     text-align: justify;
     padding-bottom: 1rem;
-    border-bottom: 1px solid #8E6C88;
+    border-bottom: 1px solid var(--text-color);
 }
 
 .aside-1 a {
@@ -365,7 +384,7 @@ article:hover .price {
     grid-row: 3 / span 1;
     display: flex;
     flex-flow: row wrap;
-    border-top: 1px solid #8E6C88;
+    border-top: 1px solid var(--text-color);
     justify-content: flex-start;
     padding: 1rem;
 }
@@ -393,8 +412,8 @@ article:hover .price {
 .bio-container {
     grid-row: 1;
     width: 100%;
-    margin-top: 1.3rem;
-    padding: 1.3rem;
+    margin-top: var(--small);
+    padding: var(--small);
 }
 
 .bio__section {
@@ -403,7 +422,7 @@ article:hover .price {
     grid-template-rows: auto;
     justify-content: center;
     padding: 1.5rem;
-    border-top: 1px solid #8E6C88;
+    border-top: 1px solid var(--text-color);
 }
 
 .bio__section-text {
@@ -414,10 +433,10 @@ article:hover .price {
 }
 
 .bio__section--h1 {
-    font-family: 'Zilla Slab', serif;
+    font-family: var(--text-font);
     font-weight: 400;
-    color: #8E6C88;
-    font-size: 2.5em;
+    color: var(--text-color);
+    font-size: var(--large);
 }
 
 .bio__figure {
@@ -427,9 +446,9 @@ article:hover .price {
 
 .bio__section--p {
     text-align: justify;
-    font-family: 'Zilla Slab', serif;
+    font-family: var(--text-font);
     font-weight: 400;
-    color: #8E6C88;
+    color: var(--text-color);
     font-size: 1.3em;
 }
 
@@ -447,24 +466,24 @@ article:hover .price {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 40px 200px 30px 30px;
-    gap: 3rem;
+    gap: var(--large);
     width: 100%;
-    padding: 1.3rem;
-    margin-left: 2rem;
+    padding: var(--small);
+    margin-left: var(--medium);
 }
 
 .form__h2-container {
     grid-column: 1/4;
     grid-row: 1;
-    border-top: 1px solid #8E6C88;
+    border-top: 1px solid var(--text-color);
 
 }
 
 .form__h2 {
-    font-family: 'Satisfy', cursive;
+    font-family: var(--title-font);
     font-weight: 400;
-    color: #8E6C88;
-    font-size: 2.5em;
+    color: var(--text-color);
+    font-size: var(--large);
 }
 
 .form__textarea-container {
@@ -478,9 +497,9 @@ article:hover .price {
     resize: none;
     outline: none;
     border: none;
-    border-bottom: 2px solid #8E6C88;
+    border-bottom: 2px solid var(--text-color);
     background-color: transparent;
-    color: #8E6C88;
+    color: var(--text-color);
 }
 
 .form__input-container--name {
@@ -496,9 +515,9 @@ article:hover .price {
     resize: none;
     outline: none;
     border: none;
-    border-bottom: 2px solid #8E6C88;
+    border-bottom: 2px solid var(--text-color);
     background-color: transparent;
-    color: #8E6C88;
+    color: var(--text-color);
     padding-bottom: .5rem;
 }
 
@@ -509,10 +528,10 @@ article:hover .price {
 
 .form__button {
     cursor: pointer;
-    border: 2px solid #8E6C88;
+    border: 2px solid var(--text-color);
     background-color: transparent;
-    color: #8E6C88;
-    font-family: 'Satisfy', cursive;
+    color: var(--text-color);
+    font-family: var(--title-font);
     font-weight: 400;
     font-size: 1.3em;
 }
@@ -522,9 +541,9 @@ article:hover .price {
 }
 
 ::placeholder {
-    font-family: 'Satisfy', cursive;
+    font-family: var(--title-font);
     font-weight: 400;
-    color: #8E6C88;
+    color: var(--text-color);
     font-size: 20px;
     text-align: center;
 }
@@ -537,20 +556,20 @@ article:hover .price {
     justify-content: center;
     align-items: center;
     height: 100px;
-    padding-top: 1.3rem;
-    border-top: 1px solid #8E6C88;
+    padding-top: var(--small);
+    border-top: 1px solid var(--text-color);
     background-color: #F2F4F3;
 }
 
 .copyright {
-    color: #8E6C88;
+    color: var(--text-color);
     font-weight: 400;
-    font-family: 'Satisfy', cursive;
+    font-family: var(--title-font);
     font-size: large;
 }
 
 .footer__ul {
-    color: #8E6C88;
+    color: var(--text-color);
     font-weight: 800;
 }
 
