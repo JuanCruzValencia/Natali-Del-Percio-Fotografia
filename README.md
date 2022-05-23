@@ -1,2 +1,4 @@
 # Valencia Vernengo Juan Cruz
- CoderHouse Proyecto
+ Proyecto de CoderHouse
+ 
+ Portfolio de fotografia
