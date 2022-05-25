@@ -8,6 +8,7 @@
     --text-font-size: 1.3em;
     --title-font-size: 1.9em;
     --sup-title-font-size: 2.5em;
+    --animation-font-size: 4em;
 
     --xsmall:1rem;
     --small: 2rem;
@@ -90,6 +91,55 @@ body {
     padding-right: var(--xsmall);
 }
 
+/* ESTILO MENSAJE ANIMADO */
+
+.animation-message {
+    display: block;
+    position: fixed;
+    height: 70px;
+    width: 100px;
+    right: var(--small);
+    bottom: var(--small);
+    animation: 
+    pulse infinite ease-out alternate 1.5s,
+    slideIn 2s ease-in; 
+}
+
+.animation__button {
+    height: 100%;
+    width: 100%;
+    border: none;
+    background-color: transparent;
+}
+
+.animation__button i {
+    align-self: center;
+    font-size: var(--animation-font-size);
+    color: var(--text-color);
+    text-shadow: var(--main-color) 1px 1px 10px;
+}
+
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-1500px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: rotate(20deg);
+    }
+    50% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(-20deg);
+    }
+}
 /* ESTILO BACKGROUND IMG */
 
 .background__figure {
