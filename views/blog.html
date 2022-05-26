@@ -8,10 +8,11 @@
     <link rel="stylesheet" href="../style/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <script src="https://kit.fontawesome.com/c539e2d60d.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 <body>
     <!-- MENU DE NAV. -->
@@ -43,6 +44,9 @@
     <!-- FIN MENU DE NAV. -->
     <!-- BLOG -->
     <main>
+        <div class="progress" style="height: .5rem;">
+            <div class="progress-bar bg-info" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" id="myBar"></div>
+        </div>
         <div class="blog-container-1">
             <div class="blog__article-1">
                 <div class="header-1">
@@ -73,11 +77,11 @@
                     <p>Siempre tuve una fascinación por las cámaras. Cuando tenia seis años, solía jugar con la vieja Kodak de mis padres y me emocionaba el destello de luz que pasaba cuando presionaba el botón del obturador. Más tarde, mi madre compró un Minolta y yo la sacaba a escondidas del armario para explorar su funcionamiento. A los 16 ahorré y ahorré y me compré mi primera réflex Canon que pocas veces se apartaba de mi lado. Al crecer en Argentina, la diversidad geografica fue un telón de fondo que me inspiro y lleno mi alma. <a href="./about_contacto.html">Seguir leyendo...</a></p>
                 </div>
                 <div class="footer-1">
-                    <ul class="footer__ul">
-                        <li class="footer__li"><span>Seguir leyendo:</span></li>
-                        <li class="footer__li"><a href="">Primer trabajo</a></li>
-                        <li class="footer__li"><a href="">Lentes mas economicas</a></li>
-                        <li class="footer__li"><a href="">Mejores cursos</a></li>
+                    <ul class="footer-1__ul">
+                        <li class="footer-1__li"><span>Seguir leyendo:</span></li>
+                        <li class="footer-1__li"><a href="">Primer trabajo</a></li>
+                        <li class="footer-1__li"><a href="">Lentes mas economicas</a></li>
+                        <li class="footer-1__li"><a href="">Mejores cursos</a></li>
                     </ul>
                 </div>   
             </div>
@@ -96,5 +100,18 @@
         </div>
     </footer>
     <!-- FIN FOOTER & INSTA -->
+    <!-- JavaScript Bundle with Popper -->
+    <script>
+        window.onscroll = function() {myFunction()};
+
+        function myFunction() {
+            var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            var scrolled = (winScroll / height) * 100;
+            document.getElementById("myBar").style.width = scrolled + "%";
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/c539e2d60d.js" crossorigin="anonymous"></script>
 </body>
 </html>

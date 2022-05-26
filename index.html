@@ -12,7 +12,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://kit.fontawesome.com/c539e2d60d.js" crossorigin="anonymous"></script>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 <body>
     <!-- MENU DE NAV. -->
@@ -50,10 +51,23 @@
             </button>
         </div>
     <!-- FONDO DE PANTALLA -->
-        <div class="background">
-            <figure class="background__figure">
-                <img class="background__img" src="./fotos/fondopantalla.JPG" alt="Jujuy, Argentina">
-            </figure>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="background carousel-inner">
+                <figure class="background__figure carousel-item active">
+                    <img class="background__img d-block w-100" src="./fotos/fondopantalla.JPG" alt="Jujuy, Argentina">
+                </figure>
+                <figure class="background__figure carousel-item">
+                    <img class="background__img d-block w-100" src="./fotos/fondopantalla2.JPG" alt="Jujuy, Argentina">
+                </figure>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
     <!-- FIN FONDO DE PANTALLA -->
     <!-- TEXTO -->
@@ -94,5 +108,8 @@
         </div>
     <!-- FIN FOOTER & INSTA -->
     </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/c539e2d60d.js" crossorigin="anonymous"></script>
 </body>
 </html>
