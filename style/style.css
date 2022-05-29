@@ -113,6 +113,7 @@ body {
     animation: 
     pulse infinite ease-out alternate 1.5s,
     slideIn 2s ease-in; 
+    z-index: 100;
 }
 
 .animation__button {
