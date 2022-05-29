@@ -61,6 +61,9 @@ body {
     font-weight: 400;
     font-family: var(--title-font);
     font-size: var(--text-font-size);
+    border-top: 2px solid var(--main-color);
+    border-bottom: 2px solid var(--main-color);
+    transition: .3s ease;
 }
 
 .nav__li a {
@@ -81,8 +84,13 @@ body {
     width: 100%;
 }
 
-.nav__li a:hover {
+.nav__li:hover {
+    border-top: 2px solid var(--text-color);
     border-bottom: 2px solid var(--text-color);
+    padding: .3rem var(--xsmall);
+}
+
+.nav__li a:hover {
     color: var(--text-color);
 }
 
