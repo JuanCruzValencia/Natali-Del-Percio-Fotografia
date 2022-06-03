@@ -1,32 +1,32 @@
 /* ESTILO FOOTER */
 
 .footer {
-    display: flex
-    flex-flow: column wrap
-    justify-content: center
-    align-items: center
-    padding: $xsmall
-    border-top: 1px solid $text-color
-    background-color: $main-color
-
-    &__ul {
-        color: $text-color
-        font-weight: 800
-    }
-
-    &__li {
-        list-style-type: none
-        text-align: center
-    }
-
-    &__li a {
-        color: $text-color
-    }
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    padding: $xsmall;
+    border-top: 1px solid $text-color;
+    background-color: $main-color;
 }
 
-.copyright {
-    color: $text-color
-    font-weight: 600
-    font-family: $title-font
-    font-size: $title-font-size
-}
+    & .copyright {
+        color: $text-color;
+        font-weight: 600;
+        font-family: $title-font;
+        font-size: $title-font-size;
+    }
+
+    & .footer__ul {
+        color: $text-color;
+        font-weight: 800;
+    }
+
+        & .footer__li {
+            list-style-type: none;
+            text-align: center;
+        }
+
+            & a {
+                color: $text-color;
+            }

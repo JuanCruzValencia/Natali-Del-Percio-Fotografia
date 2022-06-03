@@ -1,68 +1,70 @@
 /* ESTILO HEADER */
 
 .header-container {
-    display: flex
-    flex-flow: row wrap
-    width: 100%
-    justify-content: space-between
-    align-items: center
-    background-color: $main-color
-    padding-left: $small
-}
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $main-color;
+    padding-left: $small;
+    
+    & .header__logo {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        margin-top: $xsmall;
+        padding: 0 $medium;
 
-.nav {
-    display: flex
-    justify-content: flex-end
-
-
-    &__ul {
-        display: flex
-        text-align: end
-        height: 100%
-        align-items: center
-        justify-content: flex-end
-        padding-right: $small
-        margin: 0
+        & .header__img {
+            width: 100%;
+        }
+    
     }
 
-    &__li{
-        display: inline-block
-        color: $text-color
-        padding: $xsmall
-        font-weight: 600
-        font-family: $title-font
-        font-size: $title-font-size
-        border-top: 2px solid $main-color
-        border-bottom: 2px solid $main-color
-        transition: .3s ease
-        padding: $large
-    
-        & a {
-            text-decoration: none
-            text-align: right
-            padding: .7rem
-            color: $text-color
+    & .nav {
+
+        display: flex;
+        justify-content: flex-end;
+
+        & #nav__button {
+            display: none;
+        }
+        
+        & .nav__label {
+            display: none;
+        }
+
+        & .nav__ul {
+
+                display: flex;
+                text-align: end;
+                height: 100%;
+                align-items: center;
+                justify-content: flex-end;
+                padding-right: $small;
+                margin: 0;
+
+            & .nav__li {
+
+                    display: inline-block;
+                    color: $text-color;
+                    padding: $xsmall;
+                    font-weight: 600;
+                    font-family: $title-font;
+                    font-size: $title-font-size;
+                    border-top: 2px solid $main-color;
+                    border-bottom: 2px solid $main-color;
+                    transition: .3s ease;
+                    padding: $large;
+
+                & a {
+                        text-decoration: none;
+                        text-align: right;
+                        padding: .7rem;
+                        color: $text-color;
+                } 
+            }
         }
     }
-
-    &__label {
-        display: none
-    }
 }
-
-.header__logo {
-    height: 100%
-    display: flex
-    align-items: center
-    margin-top: $xsmall
-    padding: 0 $medium
-}
-
-.header__img {
-    width: 100%
-}
-
-    #nav__button {
-        display: none
-    }
-

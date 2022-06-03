@@ -1,87 +1,88 @@
 /* ESTILO MENSAJE ANIMADO */
 
 .animation-message {
-    display: block
-    position: fixed
-    height: 70px
-    width: 100px
-    right: $small
-    bottom: $small
+    display: block;
+    position: fixed;
+    height: 70px;
+    width: 100px;
+    right: var(--small);
+    bottom: var(--small);
     animation: 
     pulse infinite ease-out alternate 1.5s,
-    slideIn 2s ease-in
-    z-index: 100
+    slideIn 2s ease-in;
+    z-index: 100;
 
-    &__button {
-        height: 100%
-        width: 100%
-        border: none
-        background-color: transparent
-    
+    & .animation__button {
+        height: 100%;
+        width: 100%;
+        border: none;
+        background-color: transparent;
+
         & i {
-            align-self: center
-            font-size: $animation-font-size
-            color: $text-color
-            text-shadow: $main-color 1px 1px 10px
+            align-self: center;
+            font-size: var(--animation-font-size);
+            color: var(--text-color);
+            text-shadow: var(--main-color) 1px 1px 10px;
         }
-    }    
+    }
 }
+
 
 /* ESTILO BACKGROUND IMG */
 
 .background__figure {
-    margin: 0
+    margin: 0;
 
-    &__img {
-        min-height: 400px
-        max-height: 100vh
-        width: 100%
-        margin: 0
-        object-fit: cover
+    & .background__img {
+        min-height: 400px;
+        max-height: 100vh;
+        width: 100%;
+        margin: 0;
+        object-fit: cover;
     }
 }
 
 /* ESTILO SECTION INFO*/
 
 .section-info {
-    display: flex
-    flex-flow: column wrap
-    width: 100%
-}
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
 
-.protocol {
-    text-align: center
-    font-family: $text-font
-    font-weight: 400
-    color: $text-color
-    padding: $small $xsmall
-    border-radius: 1rem
-    border: 1px solid $text-color
-    margin: $xsmall
-    font-size: $text-font-size
+    & .protocol {
+        text-align: center;
+        font-family: $text-font;
+        font-weight: 400;
+        color: $text-color;
+        padding: $small $xsmall;
+        border-radius: 1rem;
+        border: 1px solid $text-color;
+        margin: $xsmall;
+        font-size: $text-font-size;
 
-    & h3 {
-        font-family: $text-font
-        font-weight: 400
-        color: $text-color
-        font-size: $title-font-size
+        & h3 {
+            font-family: $text-font;
+            font-weight: 400;
+            color: $text-color;
+            font-size: $title-font-size;
+        }
     }
-}
 
-.quote {
-    text-align: center
-    font-family: $text-font
-    font-weight: 400
-    font-size: $text-font-size
-    color: $text-color
-    margin: $small
-    padding: 0 $medium
+    & .quote {
+        text-align: center;
+        font-family: $text-font;
+        font-weight: 400;
+        font-size: $text-font-size;
+        color: $text-color;
+        margin: $small;
+        padding: 0 $medium;
 
-    & h4 {
-        font-family: $text-font
-        font-weight: 400
-        color: $text-color
-        font-size: $title-font-size
-        text-align: end
+        & h4 {
+            font-family: $text-font;
+            font-weight: 400;
+            color: $text-color;
+            font-size: $title-font-size;
+            text-align: end;
+        }
     }
 }
