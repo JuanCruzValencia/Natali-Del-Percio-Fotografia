@@ -219,41 +219,54 @@
 }
 
 @media (hover: hover) {
-
-    .nav__li:hover {
-        border-top: 2px solid $text-color;
-        border-bottom: 2px solid $text-color;
-        padding: $xsmall $large;
-    }
-
-    .gallery__figure:hover figcaption {
-        opacity: 1;
-    }
-    
-        & .gallery__image:hover {
-            filter: none;
-        }
-
-    article:hover img {
-        opacity: .4;
-    }
-
-    article:hover .price {
-        opacity: 1;
-        transform: rotate(360deg) scale(1.5);
-    }
-
-    .aside-1 a:hover {
-        color: #000;
-    }
-
-    .footer__li a:hover {
-        color: #000;
-    }
-
-    .form__button:hover {
-        background-color: $text-color;
-        color: $main-color;
-    }
-
+	.nav__li {
+		&:hover {
+			border-top: 2px solid var(--text-color);
+			border-bottom: 2px solid var(--text-color);
+			padding: var(--xsmall) var(--large);
+		}
+	}
+	.gallery__figure {
+		&:hover {
+			figcaption {
+				opacity: 1;
+			}
+		}
+	}
+	.gallery__image {
+		&:hover {
+			filter: none;
+		}
+	}
+	article {
+		&:hover {
+			img {
+				opacity: .4;
+			}
+			.price {
+				opacity: 1;
+				transform: rotate(360deg) scale(1.5);
+			}
+		}
+	}
+	.aside-1 {
+		a {
+			&:hover {
+				color: #000;
+			}
+		}
+	}
+	.footer__li {
+		a {
+			&:hover {
+				color: #000;
+			}
+		}
+	}
+	.form__button {
+		&:hover {
+			background-color: var(--text-color);
+			color: var(--main-color);
+		}
+	}
 }
