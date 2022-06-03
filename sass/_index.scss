@@ -1,28 +1,28 @@
 /* ESTILO MENSAJE ANIMADO */
 
 .animation-message {
-    display: block;
-    position: fixed;
-    height: 70px;
-    width: 100px;
-    right: var(--small);
-    bottom: var(--small);
+    display: block
+    position: fixed
+    height: 70px
+    width: 100px
+    right: $small
+    bottom: $small
     animation: 
     pulse infinite ease-out alternate 1.5s,
-    slideIn 2s ease-in;
-    z-index: 100;
+    slideIn 2s ease-in
+    z-index: 100
 
     &__button {
-        height: 100%;
-        width: 100%;
-        border: none;
-        background-color: transparent;
+        height: 100%
+        width: 100%
+        border: none
+        background-color: transparent
     
         & i {
-            align-self: center;
-            font-size: var(--animation-font-size);
-            color: var(--text-color);
-            text-shadow: var(--main-color) 1px 1px 10px;
+            align-self: center
+            font-size: $animation-font-size
+            color: $text-color
+            text-shadow: $main-color 1px 1px 10px
         }
     }    
 }
@@ -51,37 +51,37 @@
 
 .protocol {
     text-align: center
-    font-family: var(--text-font)
+    font-family: $text-font
     font-weight: 400
-    color: var(--text-color)
-    padding: var(--small) var(--xsmall)
+    color: $text-color
+    padding: $small $xsmall
     border-radius: 1rem
-    border: 1px solid var(--text-color)
-    margin: var(--xsmall)
-    font-size: var(--text-font-size)
+    border: 1px solid $text-color
+    margin: $xsmall
+    font-size: $text-font-size
 
     & h3 {
-        font-family: var(--text-font)
+        font-family: $text-font
         font-weight: 400
-        color: var(--text-color)
-        font-size: var(--title-font-size)
+        color: $text-color
+        font-size: $title-font-size
     }
 }
 
 .quote {
     text-align: center
-    font-family: var(--text-font)
+    font-family: $text-font
     font-weight: 400
-    font-size: var(--text-font-size)
-    color: var(--text-color)
-    margin: var(--small)
-    padding: 0 var(--medium)
+    font-size: $text-font-size
+    color: $text-color
+    margin: $small
+    padding: 0 $medium
 
     & h4 {
-        font-family: var(--text-font)
+        font-family: $text-font
         font-weight: 400
-        color: var(--text-color)
-        font-size: var(--title-font-size)
+        color: $text-color
+        font-size: $title-font-size
         text-align: end
     }
 }

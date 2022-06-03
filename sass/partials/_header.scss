@@ -6,8 +6,8 @@
     width: 100%
     justify-content: space-between
     align-items: center
-    background-color: var(--main-color)
-    padding-left: var(--small)
+    background-color: $main-color
+    padding-left: $small
 }
 
 .nav {
@@ -21,27 +21,27 @@
         height: 100%
         align-items: center
         justify-content: flex-end
-        padding-right: var(--small)
+        padding-right: $small
         margin: 0
     }
 
     &__li{
         display: inline-block
-        color: var(--text-color)
-        padding: var(--xsmall)
+        color: $text-color
+        padding: $xsmall
         font-weight: 600
-        font-family: var(--title-font)
-        font-size: var(--title-font-size)
-        border-top: 2px solid var(--main-color)
-        border-bottom: 2px solid var(--main-color)
+        font-family: $title-font
+        font-size: $title-font-size
+        border-top: 2px solid $main-color
+        border-bottom: 2px solid $main-color
         transition: .3s ease
-        padding: var(--large)
+        padding: $large
     
         & a {
             text-decoration: none
             text-align: right
             padding: .7rem
-            color: var(--text-color)
+            color: $text-color
         }
     }
 
@@ -54,8 +54,8 @@
     height: 100%
     display: flex
     align-items: center
-    margin-top: var(--xsmall)
-    padding: 0 var(--medium)
+    margin-top: $xsmall
+    padding: 0 $medium
 }
 
 .header__img {

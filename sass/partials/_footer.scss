@@ -5,12 +5,12 @@
     flex-flow: column wrap
     justify-content: center
     align-items: center
-    padding: var(--xsmall)
-    border-top: 1px solid var(--text-color)
-    background-color: var(--main-color)
+    padding: $xsmall
+    border-top: 1px solid $text-color
+    background-color: $main-color
 
     &__ul {
-        color: var(--text-color)
+        color: $text-color
         font-weight: 800
     }
 
@@ -20,13 +20,13 @@
     }
 
     &__li a {
-        color: var(--text-color)
+        color: $text-color
     }
 }
 
 .copyright {
-    color: var(--text-color)
+    color: $text-color
     font-weight: 600
-    font-family: var(--title-font)
-    font-size: var(--title-font-size)
+    font-family: $title-font
+    font-size: $title-font-size
 }
