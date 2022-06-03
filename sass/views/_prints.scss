@@ -1,0 +1,62 @@
+/* ESTILO PRINTS */
+
+.print-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    box-sizing: border-box;
+    position: relative;
+    justify-content: space-evenly;
+    row-gap: var(--large);
+    column-gap: var(--xsmall);
+    margin: var(--medium);
+
+    &__article {
+        align-self: center;
+        justify-self: center;
+        position: relative;
+        height: 400px;
+        width: 100%;
+        max-width: 400px;
+        padding: var(--xsmall);
+        border-radius: 2%;
+        opacity: 1;
+        margin-top: var(--medium);
+        border: 1px solid var(--text-color);
+        box-shadow: 0 0 30px #aaa;
+
+        &__figure {
+            margin: 0;
+
+            &__img {
+                height: 300px;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+
+
+        & section h3 {
+            font-family: var(--text-font);
+            font-weight: 400;
+            color: var(--text-color);
+            margin: var(--small) 0;
+        }
+    
+        & .price {
+            position: absolute;
+            top: 35% ;
+            left: 35%;
+            padding: var(--xsmall) var(--small);
+            border: 1px solid var(--text-color);
+            background-color: var(--main-color);
+            font-family: var(--text-font);
+            font-weight: 400;
+            color: var(--text-color);
+            font-size: var(--text-font-size);
+            opacity: 0;
+            cursor: pointer;
+            transition: all 1.2s ease;
+        }
+    }
+}
