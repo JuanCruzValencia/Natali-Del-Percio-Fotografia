@@ -1,4 +1,4 @@
-@keyframes "slideIn" {
+@keyframes slideIn {
 	0% {
 		transform: translateX(-1500px);
 	}
@@ -6,7 +6,8 @@
 		transform: translateX(0);
 	}
 }
-@keyframes "pulse" {
+
+@keyframes pulse {
 	0% {
 		transform: rotate(20deg);
 	}

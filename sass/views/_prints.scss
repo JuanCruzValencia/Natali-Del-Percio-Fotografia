@@ -25,6 +25,16 @@
         border: 1px solid $text-color;
         box-shadow: 0 0 30px #aaa;
 
+        &:hover {
+			img {
+				opacity: .4;
+			}
+			.price {
+				opacity: 1;
+				transform: rotate(360deg) scale(1.5);
+			}
+		}
+
         & .print__figure {
             margin: 0;
 
@@ -35,11 +45,17 @@
             }
         }
 
-        & .print-section h3 {
-            font-family: $text-font;
-            font-weight: 400;
-            color: $text-color;
-            margin: $small 0;
+        & .print__section-div {
+
+            & .print__section--h3 {
+
+                & .print__section__h3 {
+                    font-family: $text-font;
+                    font-weight: 400;
+                    color: $text-color;
+                    margin: $small 0;
+                }
+            }
         }
 
         & .price {

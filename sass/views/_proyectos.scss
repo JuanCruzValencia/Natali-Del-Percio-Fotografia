@@ -11,6 +11,13 @@
         margin: 0;
         position: relative;
         object-fit: cover;
+
+        &:hover {
+
+			figcaption {
+				opacity: 1;
+			}
+		}
  
         &:first-child {
             grid-column: 1/5;
@@ -53,13 +60,19 @@
         }
 
         & .gallery__image {
+
             height: 80vh;
             width: 100%;
             object-fit: cover;
             filter: grayscale(.8);
+
+            &:hover {
+                filter: none;
+            }
         }
 
         & .gallery__figcaption {
+            
             position: absolute;
             bottom: 0;
             width: 100%;

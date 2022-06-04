@@ -5,8 +5,8 @@
     position: fixed;
     height: 70px;
     width: 100px;
-    right: var(--small);
-    bottom: var(--small);
+    right: $small;
+    bottom: $small;
     animation: 
     pulse infinite ease-out alternate 1.5s,
     slideIn 2s ease-in;
@@ -20,9 +20,9 @@
 
         & i {
             align-self: center;
-            font-size: var(--animation-font-size);
-            color: var(--text-color);
-            text-shadow: var(--main-color) 1px 1px 10px;
+            font-size: $animation-font-size;
+            color: $text-color;
+            text-shadow: $main-color 1px 1px 10px;
         }
     }
 }
@@ -43,6 +43,24 @@
 }
 
 /* ESTILO SECTION INFO*/
+
+.quote {
+    text-align: center;
+    font-family: $text-font;
+    font-weight: 400;
+    font-size: $text-font-size;
+    color: $text-color;
+    margin: $small;
+    padding: 0 $medium;
+
+    & h4 {
+        font-family: $text-font;
+        font-weight: 400;
+        color: $text-color;
+        font-size: $title-font-size;
+        text-align: end;
+    }
+}
 
 .section-info {
     display: flex;
@@ -65,24 +83,6 @@
             font-weight: 400;
             color: $text-color;
             font-size: $title-font-size;
-        }
-    }
-
-    & .quote {
-        text-align: center;
-        font-family: $text-font;
-        font-weight: 400;
-        font-size: $text-font-size;
-        color: $text-color;
-        margin: $small;
-        padding: 0 $medium;
-
-        & h4 {
-            font-family: $text-font;
-            font-weight: 400;
-            color: $text-color;
-            font-size: $title-font-size;
-            text-align: end;
         }
     }
 }

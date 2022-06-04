@@ -23,6 +23,7 @@
         & .footer__li {
             list-style-type: none;
             text-align: center;
+            font-size: $title-font-size;
 
             & a {
                 color: $text-color;
