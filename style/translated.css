@@ -553,7 +553,7 @@ body {
     flex-flow: row;
     justify-content: space-between; }
     .header-container .header__logo {
-      width: 30%;
+      width: 50%;
       min-height: 50px; }
     .header-container .nav {
       align-items: center;
