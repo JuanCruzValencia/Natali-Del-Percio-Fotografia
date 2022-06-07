@@ -58,7 +58,7 @@ body {
     margin: 0;
 }
 
-.nav__li{
+.nav__li {
     display: inline-block;
     color: var(--text-color);
     padding: var(--xsmall);

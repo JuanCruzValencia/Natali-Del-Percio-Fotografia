@@ -1,4 +1,8 @@
 /* PAGINAS PARA EXPORTAR */
+/* COLORS */
+/* FONT STYKES */
+/* FONT SIZES */
+/* BORDER AND MARGIN SIZES */
 * {
   margin: 0;
   padding: 0;
@@ -10,6 +14,7 @@ html {
 body {
   background: linear-gradient(180deg, #fad8d6 16%, white 100%); }
 
+/* ENVELOPE ANIMATION */
 @keyframes slideIn {
   0% {
     transform: translateX(-1500px); }
