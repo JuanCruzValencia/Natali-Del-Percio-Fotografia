@@ -1,6 +1,18 @@
-/* ESTILO MOBILE */
+/* ESTILO MOBILE & TABLET */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1024px) {
+    .blog-container-1 {
+        & .blog__article-1 {
+            & .aside-1 {
+                & .aside__img {
+                    height: 200px;
+                }
+            }
+        }
+    }    
+}
+
+@media only screen and (max-width: 768px) {
 
    
     $text-font-size: 1.2em;
@@ -17,6 +29,7 @@
         & .header__logo {
             width: 50%;
             min-height: 50px;
+            padding-left: 0;
         }
 
         & .nav {
@@ -47,7 +60,7 @@
             & .nav__label {
                 display :block;
                 padding: 0 $small;
-                font-size: $sup-title-font-size;
+                font-size: 3em;
                 cursor: pointer;
                 color: $text-color;
             }
@@ -148,6 +161,10 @@
                 & p {
                     border: none;
                 }
+
+                & .aside__img {
+                    height: 350px;
+                }
             }
             
             & .footer-1 {
@@ -229,6 +246,18 @@
             
             & .form__button {
                 width: 100%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .blog-container-1 {
+        & .blog__article-1 {
+            & .aside-1 {
+                & .aside__img {
+                    height: 200px;
+                }
             }
         }
     }

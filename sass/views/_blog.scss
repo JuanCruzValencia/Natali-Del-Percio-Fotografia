@@ -66,8 +66,9 @@
             }
 
             & .main__img {
-                width: 70%;
+                width: 100%;
                 object-fit: cover;
+                text-align: center;
             }
         }
 
@@ -101,7 +102,7 @@
             }
 
             & .aside__img {
-                height: 200px;
+                height: 350px;
                 width: 70%;
                 object-fit: cover;
                 border-radius: 50%;
