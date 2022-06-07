@@ -14,12 +14,12 @@
         flex-flow: row;
         justify-content: space-between;
 
-        & .header__img {
-            height: 50px;
+        & .header__logo {
+            width: 30%;
         }
 
         & .nav {
-            align-items: center;
+            align-items: center;height: 50px;
 
             & .nav__ul {
                 position: absolute;

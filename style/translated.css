@@ -552,10 +552,11 @@ body {
   .header-container {
     flex-flow: row;
     justify-content: space-between; }
-    .header-container .header__img {
-      height: 50px; }
+    .header-container .header__logo {
+      width: 30%; }
     .header-container .nav {
-      align-items: center; }
+      align-items: center;
+      height: 50px; }
       .header-container .nav .nav__ul {
         position: absolute;
         top: 60px;
