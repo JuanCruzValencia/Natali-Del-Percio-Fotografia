@@ -553,7 +553,8 @@ body {
     flex-flow: row;
     justify-content: space-between; }
     .header-container .header__logo {
-      width: 30%; }
+      width: 30%;
+      min-height: 50px; }
     .header-container .nav {
       align-items: center;
       height: 50px; }
