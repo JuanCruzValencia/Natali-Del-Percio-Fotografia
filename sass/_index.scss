@@ -63,8 +63,7 @@
 }
 
 .section-info {
-    display: flex;
-    flex-flow: column wrap;
+    @include flex(column wrap, baseline, baseline);
     width: 100%;
 
     & .protocol {

@@ -1,10 +1,7 @@
 /* ESTILO FOOTER */
 
 .footer {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
+    @include flex(column wrap, center, center);
     padding: $xsmall;
     border-top: 1px solid $text-color;
     background-color: $main-color;

@@ -13,9 +13,7 @@
         padding: $medium;
 
         & .bio__section {
-            display: flex;
-            flex-flow: row;
-            justify-content: space-evenly;
+            @include flex(row, space-evenly, baseline);
             padding: $large;
             border-top: 1px solid $text-color;
             border-bottom: 1px solid $text-color;
@@ -76,19 +74,6 @@
 }        
         
 /* ESTILO FORM */
-
-%input_style {
-    width: 100%;
-    resize: none;
-    outline: none;
-    border: none;
-    background-color: transparent;
-    color: $text-color;
-    padding: $xsmall;
-    background-color: $main-color;
-    border-radius: $xsmall;
-    border-bottom: 2px solid $text-color;
-}
 
 .form {
     grid-row: 2;

@@ -1,6 +1,6 @@
 /* ESTILO MOBILE & TABLET */
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 575px) {
     .blog-container-1 {
         & .blog__article-1 {
             & .aside-1 {
@@ -13,7 +13,7 @@
 }
 
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
 
    
     $text-font-size: 1.2em;
@@ -24,8 +24,7 @@
     /* ESTILO NAV */
     
     .header-container {
-        flex-flow: row;
-        justify-content: space-between;
+        @include flex(row, space-between, center);
 
         & .header__logo {
             width: 50%;
@@ -34,7 +33,8 @@
         }
 
         & .nav {
-            align-items: center;height: 50px;
+            align-items: center;
+            height: 50px;
 
             & .nav__ul {
                 position: absolute;
@@ -71,7 +71,7 @@
                 &:checked {
                     ~ {
                         ul {
-                            height: 250px;
+                            height: 270px;
                             transition: height 1s;
                         }
                     }
@@ -91,8 +91,7 @@
     /* ESTILO GALLERY */
 
     .gallery {
-        display: flex;
-        flex-flow: column wrap;
+        @include flex(column wrap, baseline, baseline);
         gap: $xsmall;
         
         &.gallery__image {
@@ -171,10 +170,8 @@
             & .footer-1 {
                 grid-column: 1 / 3;
                 grid-row: 4 / 5;
-                display: flex;
-                flex-flow: row wrap;
+                @include flex(row wrap, flex-start, baseline);
                 border-top: 1px solid $text-color;
-                justify-content: flex-start;
                 padding: $xsmall;
             }
         }
@@ -252,9 +249,8 @@
     }
 }
 
-@media only screen and (max-width: 1024px) {
+/* @media only screen and (max-width: 1023px) and (min-width: 768px) {
     
-        /* ESTILO GALLERY */
     
         .gallery {
             display: grid;
@@ -305,7 +301,6 @@
         }
     
     
-        /* ESTILO FOTO BLOG\BIO */
         
         .blog-container-1 {
             & .blog__article-1 {
@@ -316,7 +311,7 @@
                 }
             }
         }    
-    }
+    } */
     
 @media only screen and (max-width: 2000px) {
     .blog-container-1 {

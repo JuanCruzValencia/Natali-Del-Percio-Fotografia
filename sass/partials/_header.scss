@@ -1,17 +1,13 @@
 /* ESTILO HEADER */
 
 .header-container {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: center;
+    @include flex(row wrap, space-between, center);
     width: 100%;
     background-color: $main-color;
     padding-left: $small;
     
     & .header__logo {
         height: 100%;
-        display: flex;
         align-items: center;
         margin-top: $xsmall;
         padding: 0 $medium;
@@ -23,9 +19,7 @@
     }
 
     & .nav {
-
-        display: flex;
-        justify-content: flex-end;
+        @include flex(row, flex-end, baseline);
 
         & #nav__button {
             display: none;
@@ -36,12 +30,9 @@
         }
 
         & .nav__ul {
-
-                display: flex;
+                @include flex(row, flex-end, center);
                 text-align: end;
-                height: 100%;
-                align-items: center;
-                justify-content: flex-end;
+                height: 100%;         
                 padding-right: $small;
                 margin: 0;
 
