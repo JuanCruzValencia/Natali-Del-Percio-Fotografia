@@ -1,0 +1,32 @@
+/* MIXINS AND MAPS(HEADER, FOOTER, INDEX, BLOG Y ABOUT) */ 
+
+@mixin flex($flow, $justify, $align) {
+    display: flex;
+    flex-flow: $flow;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin mediaQ($breakpoint, $breakpoints: $breakpoints) {
+    @if map-has-key($breakpoints, $breakpoint) {
+        $breakpoint: map-get($breakpoints , $breakpoint);
+    }
+    @media only screen and (max-width: #{$breakpoint}) {
+        @content;
+    }
+}
+
+/* EXTENDS(ABOUT INPUTS) */
+
+%input_style {
+    width: 100%;
+    resize: none;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: $text-color;
+    padding: $xsmall;
+    background-color: $main-color;
+    border-radius: $xsmall;
+    border-bottom: 2px solid $text-color;
+}

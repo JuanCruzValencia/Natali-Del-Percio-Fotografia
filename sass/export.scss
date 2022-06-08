@@ -1,16 +1,16 @@
 /* PAGINAS PARA EXPORTAR */
-
+/* MISC */
 @import './misc/vars';
 @import './misc/normalize';
 @import './misc/animation';
-
+/* PARTIALS */
 @import './partials/header';
 @import './partials/footer';
-
+/* PAGES */
 @import './index';
 @import './views/proyectos';
 @import './views/prints';
 @import './views/blog';
 @import './views/about_contact';
-
+/* MEDIAQ */
 @import './partials/mediaq';
