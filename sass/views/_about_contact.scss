@@ -77,6 +77,19 @@
         
 /* ESTILO FORM */
 
+%input_style {
+    width: 100%;
+    resize: none;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: $text-color;
+    padding: $xsmall;
+    background-color: $main-color;
+    border-radius: $xsmall;
+    border-bottom: 2px solid $text-color;
+}
+
 .form {
     grid-row: 2;
     display: grid;
@@ -105,17 +118,7 @@
         margin: $small 0;
 
         & .form__textarea {
-            width: 100%;
-            height: 100%;
-            resize: none;
-            outline: none;
-            border: none;
-            background-color: transparent;
-            color: $text-color;
-            background-color: $main-color;
-            border-radius: $xsmall;
-            padding: $xsmall;
-            border-bottom: 2px solid $text-color;
+            @extend %input_style;
 
             &::placeholder {
                 text-align: left;
@@ -137,16 +140,7 @@
         width: 80%;
 
         & .form__input--name {
-            width: 100%;
-            resize: none;
-            outline: none;
-            border: none;
-            background-color: transparent;
-            color: $text-color;
-            padding: $xsmall;
-            background-color: $main-color;
-            border-radius: $xsmall;
-            border-bottom: 2px solid $text-color;
+            @extend %input_style;
 
             &::placeholder {
                 text-align: left;
@@ -168,16 +162,7 @@
         width: 80%;
 
         & .form__input--email {
-            width: 100%;
-            resize: none;
-            outline: none;
-            border: none;
-            background-color: transparent;
-            color: $text-color;
-            padding: $xsmall;
-            background-color: $main-color;
-            border-radius: $xsmall;
-            border-bottom: 2px solid $text-color;
+            @extend %input_style;
 
             &::placeholder {
                 text-align: left;

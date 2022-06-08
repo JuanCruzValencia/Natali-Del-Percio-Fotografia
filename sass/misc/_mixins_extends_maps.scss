@@ -1,4 +1,4 @@
-/* MIXINS AND MAPS(HEADER, FOOTER, INDEX, BLOG Y ABOUT) */ 
+/* MIXINS AND MAPS(HEADER, FOOTER, INDEX, BLOG) */ 
 
 @mixin flex($flow, $justify, $align) {
     display: flex;
@@ -14,19 +14,4 @@
     @media only screen and (max-width: #{$breakpoint}) {
         @content;
     }
-}
-
-/* EXTENDS(ABOUT INPUTS) */
-
-%input_style {
-    width: 100%;
-    resize: none;
-    outline: none;
-    border: none;
-    background-color: transparent;
-    color: $text-color;
-    padding: $xsmall;
-    background-color: $main-color;
-    border-radius: $xsmall;
-    border-bottom: 2px solid $text-color;
 }
