@@ -10,14 +10,6 @@
 $width: 42px;
 $height: 40px;
 
-/* body {
-	font-family: 'Nunito Sans', sans-serif;
-	color: rgba(#2c2c2c,.5);
-	*, *:after, *:before {
-		box-sizing: border-box;
-	}
-} */
-
 .container {
 	display: flex;
 	justify-content: flex-end;
@@ -248,7 +240,7 @@ $height: 40px;
             }
 
             & .aside__img {
-                height: 350px;
+                height: 300px;
                 width: 70%;
                 object-fit: cover;
                 border-radius: 50%;
