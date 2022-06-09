@@ -10,3 +10,4 @@ SASS
 3. Se ingreso una breve descripcion en cada pagina.
 4. Se agrego un share button en el blog.
 5. Se optimizaron las imagenes: valor total antes: 43.94 mb valor total ahora: 13.93 .
+6. Agregue un sitemap a la carpeta.
