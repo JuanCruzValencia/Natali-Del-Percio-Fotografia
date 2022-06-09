@@ -1,0 +1,7 @@
+Desafio SASS II + SEO
+
+1. Se cambio el titulo de cada pagina para que haga referencia a la misma y ademas a la seccion donde se encuentra.
+2. Se ingreso las siguientes keywords: photograph, headshot, portrait, stock photos, photo printing, photo gallery, nature photos, photo shoot.
+3. Se ingreso una breve descripcion en cada pagina.
+4. Se agrego un share button en el blog.
+5. Se optimizaron las imagenes valor total antes: 43.94 mb valor total ahora: .
