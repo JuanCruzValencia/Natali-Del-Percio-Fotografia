@@ -7,6 +7,11 @@
             max-height: 50vh;
             & .gallery__image {
                 max-height: 50vh;
+                filter: none;
+            }
+
+            & .gallery__figcaption {
+                opacity: 1;
             }
         }
     }
@@ -62,6 +67,12 @@
                         width: 100%;
                         display: block;
                     }
+
+                    &:hover {
+                        border-top: transparent;
+                        border-bottom: transparent;
+                        padding: $xsmall $large;
+                    }
                 }
             }
 
@@ -100,10 +111,18 @@
     .gallery {
         @include flex(column wrap, baseline, baseline);
         gap: $xsmall;
+
+        & .gallery__figure {
         
-        &.gallery__image {
-            height: 60vh;
-            width: 100%;
+            &.gallery__image {
+                height: 60vh;
+                width: 100%;
+                filter: none;
+            }
+
+            & .gallery__figcaption {
+                opacity: 1;
+            }
         }
     }
     
@@ -132,6 +151,7 @@
                 border: none;
                 background-color: transparent;
                 border-radius: 0;
+                transform: none;
             }
         }
     }

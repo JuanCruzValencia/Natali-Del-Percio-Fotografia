@@ -450,7 +450,7 @@ body {
           text-align: center;
           margin-top: 3rem; }
       .blog-container-1 .blog__article-1 .main-1 .main__img {
-        width: 100%;
+        max-width: 80%;
         object-fit: cover;
         text-align: center; }
     .blog-container-1 .blog__article-1 .aside-1 {
@@ -636,7 +636,10 @@ body {
   .gallery .gallery__figure {
     max-height: 50vh; }
     .gallery .gallery__figure .gallery__image {
-      max-height: 50vh; }
+      max-height: 50vh;
+      filter: none; }
+    .gallery .gallery__figure .gallery__figcaption {
+      opacity: 1; }
   .blog-container-1 .blog__article-1 .aside-1 .aside__img {
     height: 200px;
     width: 100%; } }
@@ -671,6 +674,10 @@ body {
           .header-container .nav .nav__ul .nav__li a {
             width: 100%;
             display: block; }
+          .header-container .nav .nav__ul .nav__li:hover {
+            border-top: transparent;
+            border-bottom: transparent;
+            padding: 1rem 3rem; }
       .header-container .nav .nav__label {
         display: block;
         padding: 0 2rem;
@@ -692,9 +699,12 @@ body {
     justify-content: baseline;
     align-items: baseline;
     gap: 1rem; }
-    .gallery.gallery__image {
+    .gallery .gallery__figure.gallery__image {
       height: 60vh;
-      width: 100%; }
+      width: 100%;
+      filter: none; }
+    .gallery .gallery__figure .gallery__figcaption {
+      opacity: 1; }
   /* ESTILO PRINTS */
   .print-list {
     display: grid;
@@ -714,7 +724,8 @@ body {
         padding: 0;
         border: none;
         background-color: transparent;
-        border-radius: 0; }
+        border-radius: 0;
+        transform: none; }
   /* ESTILO BLOG */
   .blog-container-1 .blog__article-1 {
     display: grid;

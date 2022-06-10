@@ -203,7 +203,7 @@ $height: 40px;
             }
 
             & .main__img {
-                width: 100%;
+                max-width: 80%;
                 object-fit: cover;
                 text-align: center;
             }
