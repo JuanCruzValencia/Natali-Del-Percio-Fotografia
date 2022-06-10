@@ -315,12 +315,11 @@ body {
   top: 0; }
 
 /* ESTILO SHARE BUTTON */
-.container {
+.share-container {
   display: flex;
   justify-content: flex-end;
   position: relative;
-  float: right;
-  margin: 0 0 80px; }
+  /* 	float: right; */ }
 
 .trigger {
   height: 40px;
