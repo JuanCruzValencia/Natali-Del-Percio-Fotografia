@@ -10,12 +10,11 @@
 $width: 42px;
 $height: 40px;
 
-.container {
+.share-container {
 	display: flex;
 	justify-content: flex-end;
 	position: relative;
-	float: right;
-	margin: 0 0 80px;
+/* 	float: right; */
 }
 
 .trigger {
