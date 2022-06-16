@@ -5,7 +5,7 @@
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 80vh);
     gap: $xsmall;
-    margin: $small 0;
+    margin: $xsmall $medium;
 
     & .gallery__figure {
         margin: 0;
