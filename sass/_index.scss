@@ -9,7 +9,7 @@
     bottom: $small;
     animation: 
     pulse infinite ease-out alternate 1.5s,
-    slideIn 2s ease-in;
+    slideIn 3.5s ease-in;
     z-index: 100;
 
     & .animation__button {
@@ -56,7 +56,7 @@
     & h4 {
         font-family: $text-font;
         font-weight: 400;
-        color: $text-color;
+        color: $title-color;
         font-size: $title-font-size;
         text-align: end;
     }
@@ -80,7 +80,7 @@
         & h3 {
             font-family: $text-font;
             font-weight: 400;
-            color: $text-color;
+            color: $title-color;
             font-size: $title-font-size;
         }
     }

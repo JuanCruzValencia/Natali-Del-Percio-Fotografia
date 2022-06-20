@@ -167,7 +167,7 @@ $height: 40px;
                 font-size: 5em;
                 font-family: $text-font;
                 font-weight: 600;
-                color: $text-color;
+                color: $title-color;
                 text-transform: uppercase;
             }
 
@@ -186,7 +186,7 @@ $height: 40px;
             & h4 {
                 font-size: $medium;
                 font-family: $text-font;
-                color: $text-color;
+                color: $title-color;
                 text-decoration: underline;
             }
 
@@ -219,6 +219,7 @@ $height: 40px;
                 margin: $xsmall;
                 text-align: justify;
                 font-size: $title-font-size;
+                color: $title-color;
             }
 
             &  p {

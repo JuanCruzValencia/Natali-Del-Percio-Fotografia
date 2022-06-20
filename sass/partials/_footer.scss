@@ -7,7 +7,7 @@
     background-color: $main-color;
 
     & .copyright {
-        color: $text-color;
+        color: $title-color;
         font-weight: 600;
         font-family: $title-font;
         font-size: $title-font-size;
@@ -23,7 +23,7 @@
             font-size: $title-font-size;
 
             & a {
-                color: $text-color;
+                color: $title-color;
             }
         }
     }
