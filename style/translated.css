@@ -43,7 +43,11 @@ body {
   padding: 1rem;
   background-color: #FFFFFA;
   border-radius: 1rem;
-  border-bottom: 2px solid #8E6C88; }
+  border-bottom: 2px solid #8E6C88;
+  font-family: "Italiana", serif;
+  font-weight: 600;
+  color: #8E6C88;
+  font-size: 2em; }
 
 /* PARTIALS */
 /* ESTILO HEADER */
@@ -580,11 +584,6 @@ body {
     margin: 2rem 0; }
     .form .form__textarea-container .form__textarea::placeholder {
       text-align: left; }
-      .form .form__textarea-container .form__textarea::placeholder {
-        font-family: "Italiana", serif;
-        font-weight: 600;
-        color: #8E6C88;
-        font-size: 2em; }
   .form .form__input-container--name {
     grid-column: 3;
     grid-row: 3;
@@ -592,11 +591,6 @@ body {
     width: 80%; }
     .form .form__input-container--name .form__input--name::placeholder {
       text-align: left; }
-      .form .form__input-container--name .form__input--name::placeholder {
-        font-family: "Italiana", serif;
-        font-weight: 600;
-        color: #8E6C88;
-        font-size: 2em; }
   .form .form__input-container--email {
     grid-column: 4;
     grid-row: 3;
@@ -604,11 +598,6 @@ body {
     width: 80%; }
     .form .form__input-container--email .form__input--email::placeholder {
       text-align: left; }
-      .form .form__input-container--email .form__input--email::placeholder {
-        font-family: "Italiana", serif;
-        font-weight: 600;
-        color: #8E6C88;
-        font-size: 2em; }
   .form .form__button-container {
     grid-column: 2;
     grid-row: 4;

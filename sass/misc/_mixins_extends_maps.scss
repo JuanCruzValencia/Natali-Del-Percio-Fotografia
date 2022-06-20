@@ -30,4 +30,8 @@
     background-color: $main-color;
     border-radius: $xsmall;
     border-bottom: 2px solid $text-color;
+    font-family: $title-font;
+    font-weight: 600;
+    color: $text-color;
+    font-size: $text-font-size;
 }
