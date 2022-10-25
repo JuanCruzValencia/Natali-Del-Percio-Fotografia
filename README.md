@@ -6,7 +6,7 @@ Static page photograpy portfolio for web development coderhouse course.
 
 ## DEMO
 
-![]()
+![](https://github.com/JuanCruzValencia/Natali-Del-Percio-Fotografia/blob/main/screen-recording.gif)
 
 ## UX
 The purpose of the the project is to create a static page for web develpment couse in CoderHouse. Layout is simple and clear and can be accessed from desktop and mobile devices.
