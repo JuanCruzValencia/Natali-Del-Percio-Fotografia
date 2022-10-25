@@ -1,8 +1,36 @@
-# Valencia Vernengo Juan Cruz
+# Natali del Percio - Static Portfolio Project
 
-Proyecto del curso de Desarrollo Web en CoderHouse, la consigna era construir a lo largo de la cursada un proyecto de una pagina web estatica de 5 secciones incluyendo la pagina de inico o home, un formulario y una galeria.
+Link to live version - [Natali Del Percio - Fotografia](https://natalidelperciofotografia.netlify.app/)
 
-El mismo debia contar con imagenes/videos, animaciones y herramientas de SASS como variables y mixins.
-La pagina fue desarrollada e ideada en su totalidad, el prototipo lo hice en Figma, la estructura en HTML y el estilo en un principio en CSS y a partir de mitad de cursada en SASS.
+Static page photograpy portfolio for web development coderhouse course. 
 
-La idea de este proyecto fue un portfolio de fotografia, que tuviera ademas de lo requerido unas cards con fotos en venta y un blog. 
+## DEMO
+
+![]()
+
+## UX
+The purpose of the the project is to create a static page for web develpment couse in CoderHouse. Layout is simple and clear and can be accessed from desktop and mobile devices.
+
+## Project consist following pages:
+
+### Home 
+
+### Projects
+
+### Prints 
+
+### Blog
+
+### About
+
+## Technologies used
+
+- GitHub - provides hosting for software development version control using Git.
+
+- Git - version-control system for tracking changes in source code during software development.
+
+- Google Fonts - library of free licensed fonts.
+
+- CSS3 - used to define styles for Web pages, including the design, layout and variations in display for different devices and screen sizes.
+
+- SASS - CSS pre-processor
